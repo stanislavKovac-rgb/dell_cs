@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Hello World</title>
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="world-pres-div">
+        <h1>Hello World</h1>
+        <p>This is my web page</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="row">
+        <!-- Table Column -->
+        <div class="column narrow-column">
+            <div class="section">
+                <h2>Select a table from the dropdown menu:</h2>
+                <!-- Dropdown menu for selecting tables -->
+                <select id="tableDropdown">
+                    <option value="rnc_database">rnc_database</option>
+                    <option value="rnc_accessions">rnc_accessions</option>
+                </select>
+            </div>
+        </div>
+        <!-- Wide Column -->
+        <div class="column">
+            <!-- Container for displaying current filters -->
+            <div class="section filters">
+                <h2>Filters</h2>
+                <div class="current-filters">                    
+                </div>
+                <div class="add-filter">
+                    <input type="text" id="newfilter" name="addednewfilter" value="This is a new filter" style="border: none; width: 35%;">
+                    <!-- <img src="static/img/plus_sign.jpg" alt="Plus Sign" style="width: 20px; height: 20px;" id="submitBtn"> -->
+                    <button id="submitBtn" class="button-style">+</button>
+                </div>
+            </div>
+            <!-- Container for data preview -->
+            <div class="section data-preview">
+                <h2>Data Preview</h2>
+                <div id="tableData"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="static/js/app.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
